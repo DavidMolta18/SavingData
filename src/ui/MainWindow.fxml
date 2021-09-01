@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="195.0" layoutY="20.0" text="Generador de publicaciones">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="textPost" layoutX="302.0" layoutY="68.0" prefHeight="267.0" prefWidth="277.0" />
+      <Button fx:id="openText" layoutX="403.0" layoutY="351.0" mnemonicParsing="false" text="Abrir texto" />
+      <Button fx:id="openImage" layoutX="100.0" layoutY="351.0" mnemonicParsing="false" text="Abrir imagen" />
+      <AnchorPane layoutX="18.0" layoutY="68.0" prefHeight="267.0" prefWidth="264.0" style="-fx-background-color: #DDD;">
+         <children>
+            <ImageView fx:id="imagePost" fitHeight="267.0" fitWidth="264.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="87.0" layoutY="51.0" text="Selecciona una imagen" />
+      <Label layoutX="341.0" layoutY="51.0" text="Selecciona un archivo de texto plano" />
+      <Button fx:id="saveBtn" layoutX="504.0" layoutY="351.0" mnemonicParsing="false" text="Guardar" />
+   </children>
+</AnchorPane>
